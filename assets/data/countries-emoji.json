@@ -3656,40 +3656,6 @@
         "ind": "Pulau manusia"
       }
     },
-    "IL": {
-      "currency": [
-        "ILS"
-      ],
-      "callingCode": [
-        "972"
-      ],
-      "region": "Asia",
-      "subregion": "Western Asia",
-      "flag": "flag-il",
-      "name": {
-        "common": "Israel",
-        "ces": "Izrael",
-        "deu": "Israel",
-        "fra": "Israël",
-        "hrv": "Izrael",
-        "ita": "Israele",
-        "jpn": "イスラエル",
-        "nld": "Israël",
-        "por": "Israel",
-        "rus": "Израиль",
-        "slk": "Izrael",
-        "spa": "Israel",
-        "fin": "Israel",
-        "est": "Iisrael",
-        "zho": "以色列",
-        "pol": "Izrael",
-        "urd": "اسرائیل",
-        "kor": "이스라엘",
-        "ar": "إسرائيل",
-        "tur": "İsrail",
-        "ind": "Israel"
-      }
-    },
     "IT": {
       "currency": [
         "EUR"

@@ -298,7 +298,6 @@ export const TranslationLanguageCodeList = [
     'svk',
     'fin',
     'zho',
-    'isr',
     'ar'
 ];
 export var FlagType;
