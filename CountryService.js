@@ -120,7 +120,7 @@ export const search = (filter = '', data = [], options = DEFAULT_FUSE_OPTION) =>
     }
     if (filter && filter !== '') {
         const result = fuse.search(filter);
-        return result;
+        return result.map(item => item.item);
     }
     else {
         return data;
