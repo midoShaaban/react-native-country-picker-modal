@@ -13,9 +13,9 @@ export const loadDataAsync = ((data) => (dataType = FlagType.EMOJI) => {
                     fetch(imageJsonUrl)
                         .then((response) => response.json())
                         .then((remoteData) => {
-                        data.imageCountries = remoteData;
-                        resolve(data.imageCountries);
-                    })
+                            data.imageCountries = remoteData;
+                            resolve(data.imageCountries);
+                        })
                         .catch(reject);
                 }
                 else {
@@ -87,13 +87,13 @@ export const getCountriesAsync = async (flagType, translation = 'common', region
     }
     const countries = CountryCodeList.filter(isCountryPresent(countriesRaw))
         .map((cca2) => ({
-        cca2,
-        ...{
-            ...countriesRaw[cca2],
-            name: countriesRaw[cca2].name[translation] ||
-                countriesRaw[cca2].name['common'],
-        },
-    }))
+            cca2,
+            ...{
+                ...countriesRaw[cca2],
+                name: countriesRaw[cca2].name[translation] ||
+                    countriesRaw[cca2].name['common'],
+            },
+        }))
         .filter(isRegion(region))
         .filter(isSubregion(subregion))
         .filter(isIncluded(countryCodes))
@@ -115,9 +115,9 @@ export const search = (filter = '', data = [], options = DEFAULT_FUSE_OPTION) =>
     if (data.length === 0) {
         return [];
     }
-    if (!fuse) {
-        fuse = new Fuse(data, options);
-    }
+    // if (!fuse) {
+    fuse = new Fuse(data, options);
+    // }
     if (filter && filter !== '') {
         const result = fuse.search(filter);
         return result.map(item => item.item);
